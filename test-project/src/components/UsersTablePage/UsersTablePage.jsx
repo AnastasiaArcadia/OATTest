@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {loadUsersFailed, loadUsersSuccess} from "../../actions/users";
 import "react-table/react-table.css";
 import {connect} from 'react-redux';
+import {loadUsersFailed, loadUsersSuccess} from "../../actions/users";
 import {getUsers} from "../../services/users";
 import DataTable from "../DataTable/DataTable";
 
@@ -37,12 +37,17 @@ export class UsersTablePage extends React.Component {
     this.state = {
       columns: [
         {
-          header: "User id", accessor: user => user.userId,
+          header: "User id",
+          accessor: user => user.userId,
         },
         {
-          header: "Profile", accessor: user => this.getProfileLink(user),
+          header: "Profile",
+          accessor: user => this.getProfileLink(user),
         },
-        {header: "Name", accessor: user => user.firstName + ' ' + user.lastName, filterable: true}
+        {
+          header: "Name",
+          accessor: user => user.firstName + ' ' + user.lastName, filterable: true
+        }
       ]
     };
 
