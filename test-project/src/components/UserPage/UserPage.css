@@ -1,0 +1,11 @@
+.user-profile {
+    width: 600px;
+}
+
+.user-info {
+    float: left
+}
+
+.user-pic {
+    float: right
+}

@@ -1,20 +1,13 @@
 import React from "react";
 import "react-table/react-table.css";
-import {connect} from 'react-redux';
 
 
-export class PageNotFound extends React.Component {
-  constructor() {
-    super();
-  }
-
+export default class PageNotFound extends React.Component {
   render() {
     return (
       <div>
-        <h2>Not found</h2>
+        <h1>Sorry, page is not found</h1>
       </div>
     );
   }
 }
-
-export default connect()(PageNotFound);

@@ -6,6 +6,7 @@ import { ConnectedRouter as Router } from 'connected-react-router';
 import getStore from './store';
 import './index.css';
 import App from './components/App/App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const history = createHistory();
 const store = getStore(history);

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "query-string": "^6.10.1",
+    "react-native": "^0.61.5"
+  }
+}
