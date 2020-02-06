@@ -1,5 +1,6 @@
 import React from "react";
 import {Table, Button, Input} from 'reactstrap';
+import "./DataTable.css";
 import "react-table/react-table.css";
 import Spinner from "react-spinkit";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
@@ -64,7 +65,9 @@ export default class DataTable extends React.Component {
 
   renderBackButton() {
     return (
-      <Button outline color="secondary" onClick={this.onBack}
+      <Button className="page-back"
+              outline color="secondary"
+              onClick={this.onBack}
               disabled={this.state.pageNum === 0}>
         {'<<'}
       </Button>);
@@ -73,7 +76,8 @@ export default class DataTable extends React.Component {
   renderFrontButton() {
     const {lastPage, pageNum, data} = this.state;
     return (
-      <Button outline color="secondary"
+      <Button className="page-front"
+              outline color="secondary"
               onClick={this.onFront}
               disabled={pageNum === lastPage || data.length < this.props.pageSize}>
         {'>>'}

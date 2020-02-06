@@ -1,14 +1,16 @@
-import {loadUsersFailed, loadUsersSuccess, loadUserFailed, loadUserSuccess} from "../users";
+jest.mock('axios');
+import axios from 'axios';
+jest.mock('../../auth');
+import {getUser, getUsers} from "../../services/users";
 
-describe('users actions', () => {
-  it('should return data for load users success', () => {
+
+describe('users services', () => {
+  it('should return users and pass limit, offset parama', () => {
     const action = {
       type: 'LOAD_USERS_SUCCESS',
       payload: {c: 'd'}
     };
-    expect(loadUsersSuccess({
-      data: {c: 'd'}
-    })).toEqual(action);
+    expect(getUsers('http://test.com', 5, 30)).toEqual(action);
   });
 
   it('should return data for load use success', () => {

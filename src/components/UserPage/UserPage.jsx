@@ -1,10 +1,10 @@
 import React from "react";
-import {loadUserFailed, loadUserSuccess} from "../../actions/users";
 import "react-table/react-table.css";
-import "./UserPage.css";
 import {connect} from 'react-redux';
-import {getUser} from "../../services/users";
 import Spinner from "react-spinkit";
+import "./UserPage.css";
+import {getUser} from "../../services/users";
+import {loadUserFailed, loadUserSuccess} from "../../actions/users";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
