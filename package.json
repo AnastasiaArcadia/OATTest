@@ -27,10 +27,10 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "test-project/node_modules/.bin/react-scripts start",
-    "build": "test-project/node_modules/.bin/react-scripts build",
-    "test": "test-project/node_modules/.bin/react-scripts test",
-    "eject": "test-project/node_modules/.bin/react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
