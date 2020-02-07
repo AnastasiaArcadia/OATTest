@@ -1,12 +1,11 @@
 import React from "react";
-import { Route, Switch, withRouter } from 'react-router-dom';
-import {connect} from 'react-redux';
+import {Route, Switch} from 'react-router-dom';
 import UsersTable from "../UsersTablePage/UsersTablePage";
 import UsersPage from "../UserPage/UserPage";
 import PageNotFound from "../PageNotFound/PageNotFound";
 
 
-export class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
       <div>
@@ -20,5 +19,3 @@ export class App extends React.Component {
     );
   }
 }
-
-export default withRouter(connect()(App));

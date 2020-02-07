@@ -60,14 +60,12 @@ export class UserPage extends React.Component {
           <h1>User profile</h1>
           <div align="center">
             <div className="user-profile">
-            <div align={"left"} className="user-info">
-              {this.renderFields(user)}
-            </div>
-            <div className="user-pic">
-              <a href="https://github.com/Joeyryanbridges">
-                <img src={user.picture} className="githubIcon"/>
-              </a>
-            </div>
+              <div align={"left"} className="user-info">
+                {this.renderFields(user)}
+              </div>
+              <div className="user-pic">
+                <img alt="?" src={user.picture} className="githubIcon"/>
+              </div>
             </div>
           </div>
         </div>
