@@ -20,10 +20,10 @@ Builds the app for production to the `build` folder.<br />
 
 Two pages are implemented in the application:
 
-* ###`/users`
+* ### `/users`
 Displays table with user's ID, name and profile link with the ability to filter by name or part of it
 
-* ###`/user/{id}`
+* ### `/user/{id}`
 Shows user's personal info (login, title, name, gender, email, picture, address)
 - id - ID of user
     
