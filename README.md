@@ -1,4 +1,4 @@
-##Running project
+## Running project
 
 ### `yarn start`
 
@@ -16,7 +16,7 @@ Unit-tests can be found in `__tests__` folders
 
 Builds the app for production to the `build` folder.<br />
 
-##Functionality
+## Functionality
 
 Two pages are implemented in the application:
 
