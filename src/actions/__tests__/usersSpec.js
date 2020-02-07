@@ -2,7 +2,8 @@ import {
   loadUsersFailed,
   loadUsersSuccess,
   loadUserFailed,
-  loadUserSuccess} from "../users";
+  loadUserSuccess
+} from "../users";
 
 
 describe('users actions', () => {
