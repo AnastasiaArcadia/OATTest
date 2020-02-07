@@ -1,7 +1,6 @@
 import React from "react";
 import {Table, Button, Input} from 'reactstrap';
 import "./DataTable.css";
-import "react-table/react-table.css";
 import Spinner from "react-spinkit";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 
@@ -59,7 +58,10 @@ export default class DataTable extends React.Component {
   }
 
   onInputFilter(e) {
-    this.setState({filter: e.target.value});
+    this.setState({
+      filter: e.target.value,
+      pageNum: 0
+    });
     this.getData(e.target.value);
   }
 

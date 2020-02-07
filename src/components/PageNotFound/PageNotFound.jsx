@@ -1,5 +1,4 @@
 import React from "react";
-import "react-table/react-table.css";
 
 
 export default class PageNotFound extends React.Component {

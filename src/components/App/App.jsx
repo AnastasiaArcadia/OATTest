@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch, withRouter } from 'react-router-dom';
-import "react-table/react-table.css";
 import {connect} from 'react-redux';
 import UsersTable from "../UsersTablePage/UsersTablePage";
 import UsersPage from "../UserPage/UserPage";

@@ -1,5 +1,4 @@
 import React from "react";
-import "react-table/react-table.css";
 import {connect} from 'react-redux';
 import Spinner from "react-spinkit";
 import "./UserPage.css";

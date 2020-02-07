@@ -4,29 +4,26 @@ const USER_URL = 'user';
 const USERS_URL = 'users';
 
 
-export function getUsers(baseUrl, limit = 20, offset = 0, name) {
+export function getUsers(
+  baseUrl,
+  limit = 20,
+  offset = 0,
+  name = '') {
+
   return apiRequest(
     `${baseUrl}/${USERS_URL}`,
-    {
-      limit,
-      offset,
-      name
-    });
+    {limit, offset, name});
 }
 
 export function getUser(baseUrl, id) {
+  if (!id) {
+    return Promise.reject(new Error('User id is not defined'));
+  }
   return apiRequest(`${baseUrl}/${USER_URL}/${id}`);
 }
 
 function apiRequest(url, params, method = "GET") {
-  const headers = new Headers();
-  headers.append("Accept", "application/json");
-
-  const options = {
-    method,
-    headers,
-    params
-  };
+  const options = {method, params};
 
   return axios(url, options)
     .then(res => res.data)

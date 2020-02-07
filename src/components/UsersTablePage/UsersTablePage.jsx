@@ -1,6 +1,5 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "react-table/react-table.css";
 import {connect} from 'react-redux';
 import {loadUsersFailed, loadUsersSuccess} from "../../actions/users";
 import {getUsers} from "../../services/users";
